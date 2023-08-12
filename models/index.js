@@ -6,14 +6,14 @@ Traveller.belongsToMany(Location, {
     through: {
         model: Trips,
     },
-    as: 'planned_trips'
+    as: 'trips_taken'
 });
 
 Location.belongsToMany(Traveller, {
     through: {
         model: Trips,
     },
-    as: 'location_travellers'
+    as: 'locations_visited'
 });
 
 module.exports = { Location, Traveller, Trips };
