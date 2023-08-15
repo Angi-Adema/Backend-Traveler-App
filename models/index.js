@@ -1,5 +1,5 @@
-const Location = require('./location');
-const Traveller = require('./traveller');
+const Location = require('./Location');
+const Traveller = require('./Traveller');
 const Trip = require('./Trip');
 
 Traveller.belongsToMany(Location, {
