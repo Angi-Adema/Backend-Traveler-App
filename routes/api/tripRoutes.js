@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Traveller, Trip, Location } = require('../../models');
+const { Trip } = require('../../models');
 
 // POST route to create a new trip.
 router.post('/', async (req, res) => {
